@@ -1,0 +1,53 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Seed\\Angular\\Projects\\RealProjects\\DotNet\\EmployeeManagementSystem\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D9F3442F-0983-49C5-8EEB-7CC0A5D187B9}|EmployeeManagementSystem.csproj|d:\\seed\\angular\\projects\\realprojects\\dotnet\\employeemanagementsystem\\entity\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9F3442F-0983-49C5-8EEB-7CC0A5D187B9}|EmployeeManagementSystem.csproj|solutionrelative:entity\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9F3442F-0983-49C5-8EEB-7CC0A5D187B9}|EmployeeManagementSystem.csproj|d:\\seed\\angular\\projects\\realprojects\\dotnet\\employeemanagementsystem\\data\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9F3442F-0983-49C5-8EEB-7CC0A5D187B9}|EmployeeManagementSystem.csproj|solutionrelative:data\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 226,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\Seed\\Angular\\Projects\\RealProjects\\DotNet\\EmployeeManagementSystem\\Entity\\User.cs",
+              "RelativeDocumentMoniker": "Entity\\User.cs",
+              "ToolTip": "D:\\Seed\\Angular\\Projects\\RealProjects\\DotNet\\EmployeeManagementSystem\\Entity\\User.cs",
+              "RelativeToolTip": "Entity\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T19:25:29.535Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Repository.cs",
+              "DocumentMoniker": "D:\\Seed\\Angular\\Projects\\RealProjects\\DotNet\\EmployeeManagementSystem\\Data\\Repository.cs",
+              "RelativeDocumentMoniker": "Data\\Repository.cs",
+              "ToolTip": "D:\\Seed\\Angular\\Projects\\RealProjects\\DotNet\\EmployeeManagementSystem\\Data\\Repository.cs",
+              "RelativeToolTip": "Data\\Repository.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAswDUAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T19:21:39.843Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
