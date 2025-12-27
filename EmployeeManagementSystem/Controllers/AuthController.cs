@@ -17,7 +17,7 @@ namespace EmployeeManagementSystem.Controllers
     [ApiController]
     public class AuthController : ControllerBase
     {
-        private readonly IRepository<User> userRepo;
+        private readonly IRepository<User> userRepo; 
         private readonly IConfiguration configuration;
         private readonly IRepository<Employee> empRepo;
 

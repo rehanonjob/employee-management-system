@@ -1,14 +1,10 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Seed\\Angular\\Projects\\RealProjects\\DotNet\\EmployeeManagementSystem\\",
+  "WorkspaceRootPath": "D:\\Seed\\Employee Management System\\EmployeeManagementSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D9F3442F-0983-49C5-8EEB-7CC0A5D187B9}|EmployeeManagementSystem.csproj|d:\\seed\\angular\\projects\\realprojects\\dotnet\\employeemanagementsystem\\entity\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D9F3442F-0983-49C5-8EEB-7CC0A5D187B9}|EmployeeManagementSystem.csproj|solutionrelative:entity\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9F3442F-0983-49C5-8EEB-7CC0A5D187B9}|EmployeeManagementSystem.csproj|d:\\seed\\angular\\projects\\realprojects\\dotnet\\employeemanagementsystem\\data\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D9F3442F-0983-49C5-8EEB-7CC0A5D187B9}|EmployeeManagementSystem.csproj|solutionrelative:data\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D9F3442F-0983-49C5-8EEB-7CC0A5D187B9}|EmployeeManagementSystem.csproj|d:\\seed\\employee management system\\employeemanagementsystem\\controllers\\attendencecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9F3442F-0983-49C5-8EEB-7CC0A5D187B9}|EmployeeManagementSystem.csproj|solutionrelative:controllers\\attendencecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -17,33 +13,21 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 226,
+          "DockedWidth": 200,
           "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "User.cs",
-              "DocumentMoniker": "D:\\Seed\\Angular\\Projects\\RealProjects\\DotNet\\EmployeeManagementSystem\\Entity\\User.cs",
-              "RelativeDocumentMoniker": "Entity\\User.cs",
-              "ToolTip": "D:\\Seed\\Angular\\Projects\\RealProjects\\DotNet\\EmployeeManagementSystem\\Entity\\User.cs",
-              "RelativeToolTip": "Entity\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Title": "AttendenceController.cs",
+              "DocumentMoniker": "D:\\Seed\\Employee Management System\\EmployeeManagementSystem\\Controllers\\AttendenceController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AttendenceController.cs",
+              "ToolTip": "D:\\Seed\\Employee Management System\\EmployeeManagementSystem\\Controllers\\AttendenceController.cs",
+              "RelativeToolTip": "Controllers\\AttendenceController.cs",
+              "ViewState": "AgIAAGYAAAAAAAAAAAAuwH4AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-23T19:25:29.535Z",
+              "WhenOpened": "2025-12-27T12:06:50.816Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Repository.cs",
-              "DocumentMoniker": "D:\\Seed\\Angular\\Projects\\RealProjects\\DotNet\\EmployeeManagementSystem\\Data\\Repository.cs",
-              "RelativeDocumentMoniker": "Data\\Repository.cs",
-              "ToolTip": "D:\\Seed\\Angular\\Projects\\RealProjects\\DotNet\\EmployeeManagementSystem\\Data\\Repository.cs",
-              "RelativeToolTip": "Data\\Repository.cs",
-              "ViewState": "AgIAACwAAAAAAAAAAAAswDUAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-23T19:21:39.843Z"
             }
           ]
         }

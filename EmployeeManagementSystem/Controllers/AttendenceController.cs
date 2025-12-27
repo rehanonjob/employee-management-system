@@ -30,7 +30,7 @@ namespace EmployeeManagementSystem.Controllers
             var email = User.FindFirstValue(ClaimTypes.Name);
             var emp = (await erepo.GetAll(x => x.Email == email)).FirstOrDefault();
 
-            var today = DateTime.Today;
+            var today = DateTime.UtcNow.Date;
 
             var alreadyScanned = (await arepo.GetAll(x => x.EmpId == emp.Id && x.Date == today)).Any();
 
@@ -43,7 +43,7 @@ namespace EmployeeManagementSystem.Controllers
             {
                 EmpId = emp.Id,
                 Date = today,
-                ScanInTime = DateTime.Now,
+                ScanInTime = DateTime.UtcNow,
                 Status = "Present"
             };
 
@@ -60,7 +60,7 @@ namespace EmployeeManagementSystem.Controllers
             var email = User.FindFirstValue(ClaimTypes.Name);
             var emp = (await erepo.GetAll(x => x.Email == email)).FirstOrDefault();
 
-            var today = DateTime.Today;
+            var today = DateTime.UtcNow.Date;
 
             var attendence = (await arepo.GetAll(x => x.EmpId == emp.Id && x.Date == today)).FirstOrDefault();
 
@@ -69,7 +69,7 @@ namespace EmployeeManagementSystem.Controllers
                 return BadRequest(new { message = "Scan-in not found" });
             }
 
-            attendence.ScanOffTime = DateTime.Now;
+            attendence.ScanOffTime = DateTime.UtcNow;
 
             await arepo.SaveChangesAsync();
             return Ok(new { message = "Scan-off successful" });
@@ -101,5 +101,29 @@ namespace EmployeeManagementSystem.Controllers
             return Ok(result);
         }
 
+        [HttpGet("today-status")]
+        [Authorize]
+        public async Task<IActionResult> GetTodayStatus()
+        {
+            var email = User.FindFirstValue(ClaimTypes.Name);
+
+            var emp = (await erepo.GetAll(x => x.Email == email)).FirstOrDefault();
+
+            if (emp == null)
+            {
+                return Unauthorized();
+            }
+
+            var today = DateTime.UtcNow.Date;
+
+            var attendence = (await arepo.GetAll(x => x.EmpId == emp.Id && x.Date == today)).FirstOrDefault();
+
+            return Ok(new
+            {
+                scannedIn = attendence != null && attendence.ScanInTime != default,
+                scannedOff = attendence?.ScanOffTime != null
+            });
+
+        }
     }
 }

@@ -30,6 +30,16 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "EmployeeManagementSystem.Controllers.AttendenceController",
+    "Method": "GetTodayStatus",
+    "RelativePath": "api/Attendence/today-status",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "EmployeeManagementSystem.Controllers.AuthController",
     "Method": "Login",
     "RelativePath": "api/Auth/login",
