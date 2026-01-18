@@ -15,6 +15,7 @@ namespace EmployeeManagementSystem.Data
         public DbSet<User> Users { get; set; }
         public DbSet<LeaveRequest> LeaveRequests { get; set; }
         public DbSet<Attendance> attendances { get; set; }
+        public DbSet<PaySlip> PaySlips{ get; set; }
 
     }
 }

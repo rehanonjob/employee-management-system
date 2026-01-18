@@ -22,6 +22,7 @@ builder.Services.AddScoped<IRepository<Employee>, Repository<Employee>>();
 builder.Services.AddScoped<IRepository<User>, Repository<User>>();
 builder.Services.AddScoped<IRepository<LeaveRequest>, Repository<LeaveRequest>>();
 builder.Services.AddScoped<IRepository<Attendance>, Repository<Attendance>>();
+builder.Services.AddScoped<IRepository<PaySlip>, Repository<PaySlip>>();
 
 
 

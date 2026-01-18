@@ -29,5 +29,11 @@ namespace EmployeeManagementSystem.Entity
         public int? UserId { get; set; }
 
         public User? User { get; set; }
+
+
+        [Column(TypeName = "decimal(18,2)")]
+        public decimal? BasicSalary { get; set; }
+
+
     }
 }

@@ -17,7 +17,7 @@ namespace EmployeeManagementSystem.Controllers
     [ApiController]
     public class AuthController : ControllerBase
     {
-        private readonly IRepository<User> userRepo; 
+        private readonly IRepository<User> userRepo;
         private readonly IConfiguration configuration;
         private readonly IRepository<Employee> empRepo;
 
@@ -75,6 +75,7 @@ namespace EmployeeManagementSystem.Controllers
                 );
             return new JwtSecurityTokenHandler().WriteToken(token);
         }
+
 
         [HttpGet("profile")]
         [Authorize]
@@ -138,64 +139,5 @@ namespace EmployeeManagementSystem.Controllers
             await userRepo.SaveChangesAsync();
             return Ok(new { message = "Profile Updated Successfully" });
         }
-
-        //[HttpPost("Profile")]
-        //[Authorize]
-        //public async Task<IActionResult> UpdateProfile([FromBody] ProfileDTO model)
-        //{
-        //    var email = User.FindFirstValue(ClaimTypes.Name);
-        //    if (email == null)
-        //    {
-        //        return Unauthorized();
-        //    }
-
-        //    var user = (await userRepo.GetAll(x => x.Email == email)).FirstOrDefault();
-        //    if (user == null)
-        //    {
-        //        return NotFound("User Not Found");
-        //    }
-        //    var employee = (await empRepo.GetAll(x => x.UserId == user.Id)).FirstOrDefault();
-        //    if (employee != null)
-        //    {
-        //        employee.Name = model.Name;
-        //        employee.Email = model.Email;
-        //        employee.Phone = model.Phone;
-        //        empRepo.Update(employee);
-        //        await empRepo.SaveChangesAsync();
-        //    }
-        //    user.Email = model.Email;
-        //    user.ProfileImage = model.ProfileImage;
-        //    var passhelper = new PasswordHelper();
-        //    user.Password = passhelper.HashPassword(model.Password);
-        //    userRepo.Update(user);
-        //    await userRepo.SaveChangesAsync();
-        //    return Ok(new { message = "Profile Updated Successfully" });
-        //}
-
-        //[HttpGet("profile")]
-        //[Authorize]
-        //public async Task<IActionResult> GetProfile()
-        //{
-        //    var email = User.FindFirstValue(ClaimTypes.Name);
-        //    if (email == null)
-        //        return Unauthorized();
-
-        //    var user = (await userRepo.GetAll(x => x.Email == email)).FirstOrDefault();
-        //    if (user == null)
-        //        return NotFound("User Not Found");
-
-        //    var emp = (await empRepo.GetAll(x => x.UserId == user.Id)).FirstOrDefault();
-
-        //    return Ok(new ProfileDTO()
-        //    {
-        //        Name = emp?.Name,            // ? = safe
-        //        Email = user.Email,
-        //        Phone = emp?.Phone,
-        //        ProfileImage = user.ProfileImage
-        //    });
-        //}
-
     }
-
-
 }

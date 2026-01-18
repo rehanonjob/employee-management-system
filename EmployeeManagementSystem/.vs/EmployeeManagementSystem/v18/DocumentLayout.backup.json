@@ -1,0 +1,200 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Seed\\Employee Management System\\EmployeeManagementSystem\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D9F3442F-0983-49C5-8EEB-7CC0A5D187B9}|EmployeeManagementSystem.csproj|d:\\seed\\employee management system\\employeemanagementsystem\\controllers\\attendencecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9F3442F-0983-49C5-8EEB-7CC0A5D187B9}|EmployeeManagementSystem.csproj|solutionrelative:controllers\\attendencecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9F3442F-0983-49C5-8EEB-7CC0A5D187B9}|EmployeeManagementSystem.csproj|d:\\seed\\employee management system\\employeemanagementsystem\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9F3442F-0983-49C5-8EEB-7CC0A5D187B9}|EmployeeManagementSystem.csproj|solutionrelative:controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9F3442F-0983-49C5-8EEB-7CC0A5D187B9}|EmployeeManagementSystem.csproj|d:\\seed\\employee management system\\employeemanagementsystem\\models\\payslipdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9F3442F-0983-49C5-8EEB-7CC0A5D187B9}|EmployeeManagementSystem.csproj|solutionrelative:models\\payslipdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9F3442F-0983-49C5-8EEB-7CC0A5D187B9}|EmployeeManagementSystem.csproj|d:\\seed\\employee management system\\employeemanagementsystem\\entity\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9F3442F-0983-49C5-8EEB-7CC0A5D187B9}|EmployeeManagementSystem.csproj|solutionrelative:entity\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9F3442F-0983-49C5-8EEB-7CC0A5D187B9}|EmployeeManagementSystem.csproj|d:\\seed\\employee management system\\employeemanagementsystem\\models\\addpayslipdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9F3442F-0983-49C5-8EEB-7CC0A5D187B9}|EmployeeManagementSystem.csproj|solutionrelative:models\\addpayslipdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9F3442F-0983-49C5-8EEB-7CC0A5D187B9}|EmployeeManagementSystem.csproj|d:\\seed\\employee management system\\employeemanagementsystem\\data\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9F3442F-0983-49C5-8EEB-7CC0A5D187B9}|EmployeeManagementSystem.csproj|solutionrelative:data\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9F3442F-0983-49C5-8EEB-7CC0A5D187B9}|EmployeeManagementSystem.csproj|d:\\seed\\employee management system\\employeemanagementsystem\\data\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9F3442F-0983-49C5-8EEB-7CC0A5D187B9}|EmployeeManagementSystem.csproj|solutionrelative:data\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9F3442F-0983-49C5-8EEB-7CC0A5D187B9}|EmployeeManagementSystem.csproj|d:\\seed\\employee management system\\employeemanagementsystem\\entity\\payslip.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9F3442F-0983-49C5-8EEB-7CC0A5D187B9}|EmployeeManagementSystem.csproj|solutionrelative:entity\\payslip.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9F3442F-0983-49C5-8EEB-7CC0A5D187B9}|EmployeeManagementSystem.csproj|d:\\seed\\employee management system\\employeemanagementsystem\\entity\\attendance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9F3442F-0983-49C5-8EEB-7CC0A5D187B9}|EmployeeManagementSystem.csproj|solutionrelative:entity\\attendance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9F3442F-0983-49C5-8EEB-7CC0A5D187B9}|EmployeeManagementSystem.csproj|d:\\seed\\employee management system\\employeemanagementsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9F3442F-0983-49C5-8EEB-7CC0A5D187B9}|EmployeeManagementSystem.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9F3442F-0983-49C5-8EEB-7CC0A5D187B9}|EmployeeManagementSystem.csproj|d:\\seed\\employee management system\\employeemanagementsystem\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9F3442F-0983-49C5-8EEB-7CC0A5D187B9}|EmployeeManagementSystem.csproj|solutionrelative:data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 269,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AddPaySlipDTO.cs",
+              "DocumentMoniker": "D:\\Seed\\Employee Management System\\EmployeeManagementSystem\\Models\\AddPaySlipDTO.cs",
+              "RelativeDocumentMoniker": "Models\\AddPaySlipDTO.cs",
+              "ToolTip": "D:\\Seed\\Employee Management System\\EmployeeManagementSystem\\Models\\AddPaySlipDTO.cs",
+              "RelativeToolTip": "Models\\AddPaySlipDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-18T09:00:54.481Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Seed\\Employee Management System\\EmployeeManagementSystem\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\Seed\\Employee Management System\\EmployeeManagementSystem\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-17T12:00:50.911Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AppDBContext.cs",
+              "DocumentMoniker": "D:\\Seed\\Employee Management System\\EmployeeManagementSystem\\Data\\AppDBContext.cs",
+              "RelativeDocumentMoniker": "Data\\AppDBContext.cs",
+              "ToolTip": "D:\\Seed\\Employee Management System\\EmployeeManagementSystem\\Data\\AppDBContext.cs",
+              "RelativeToolTip": "Data\\AppDBContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-17T12:00:11.589Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PaySlip.cs",
+              "DocumentMoniker": "D:\\Seed\\Employee Management System\\EmployeeManagementSystem\\Entity\\PaySlip.cs",
+              "RelativeDocumentMoniker": "Entity\\PaySlip.cs",
+              "ToolTip": "D:\\Seed\\Employee Management System\\EmployeeManagementSystem\\Entity\\PaySlip.cs",
+              "RelativeToolTip": "Entity\\PaySlip.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAA9wBoAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-17T11:34:34.714Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PaySlipDTO.cs",
+              "DocumentMoniker": "D:\\Seed\\Employee Management System\\EmployeeManagementSystem\\Models\\PaySlipDTO.cs",
+              "RelativeDocumentMoniker": "Models\\PaySlipDTO.cs",
+              "ToolTip": "D:\\Seed\\Employee Management System\\EmployeeManagementSystem\\Models\\PaySlipDTO.cs",
+              "RelativeToolTip": "Models\\PaySlipDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-11T18:14:31.523Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Attendance.cs",
+              "DocumentMoniker": "D:\\Seed\\Employee Management System\\EmployeeManagementSystem\\Entity\\Attendance.cs",
+              "RelativeDocumentMoniker": "Entity\\Attendance.cs",
+              "ToolTip": "D:\\Seed\\Employee Management System\\EmployeeManagementSystem\\Entity\\Attendance.cs",
+              "RelativeToolTip": "Entity\\Attendance.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-11T15:08:24.517Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "D:\\Seed\\Employee Management System\\EmployeeManagementSystem\\Entity\\Employee.cs",
+              "RelativeDocumentMoniker": "Entity\\Employee.cs",
+              "ToolTip": "D:\\Seed\\Employee Management System\\EmployeeManagementSystem\\Entity\\Employee.cs",
+              "RelativeToolTip": "Entity\\Employee.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAADwvxMAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-11T12:09:14.788Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EmployeeController.cs",
+              "DocumentMoniker": "D:\\Seed\\Employee Management System\\EmployeeManagementSystem\\Controllers\\EmployeeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\EmployeeController.cs",
+              "ToolTip": "D:\\Seed\\Employee Management System\\EmployeeManagementSystem\\Controllers\\EmployeeController.cs",
+              "RelativeToolTip": "Controllers\\EmployeeController.cs",
+              "ViewState": "AgIAAGAAAAAAAAAAAAAUwGcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-11T11:43:38.77Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AttendenceController.cs",
+              "DocumentMoniker": "D:\\Seed\\Employee Management System\\EmployeeManagementSystem\\Controllers\\AttendenceController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AttendenceController.cs",
+              "ToolTip": "D:\\Seed\\Employee Management System\\EmployeeManagementSystem\\Controllers\\AttendenceController.cs",
+              "RelativeToolTip": "Controllers\\AttendenceController.cs",
+              "ViewState": "AgIAAJ8AAAAAAAAAAAAuwKYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-11T10:25:57.838Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Repository.cs",
+              "DocumentMoniker": "D:\\Seed\\Employee Management System\\EmployeeManagementSystem\\Data\\Repository.cs",
+              "RelativeDocumentMoniker": "Data\\Repository.cs",
+              "ToolTip": "D:\\Seed\\Employee Management System\\EmployeeManagementSystem\\Data\\Repository.cs",
+              "RelativeToolTip": "Data\\Repository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADIAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-11T10:25:42.886Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "D:\\Seed\\Employee Management System\\EmployeeManagementSystem\\Data\\IRepository.cs",
+              "RelativeDocumentMoniker": "Data\\IRepository.cs",
+              "ToolTip": "D:\\Seed\\Employee Management System\\EmployeeManagementSystem\\Data\\IRepository.cs",
+              "RelativeToolTip": "Data\\IRepository.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAewBAAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-11T10:25:41.472Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

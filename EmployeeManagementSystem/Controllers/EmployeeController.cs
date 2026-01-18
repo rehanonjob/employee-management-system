@@ -85,6 +85,7 @@ namespace EmployeeManagementSystem.Controllers
             oldEmp.JobTitle = emp.JobTitle;
             oldEmp.DepartmentId = emp.DepartmentId;
             oldEmp.LastWorkingDate = emp.LastWorkingDate;
+            oldEmp.BasicSalary = emp.BasicSalary;
             erepo.Update(oldEmp);
             await erepo.SaveChangesAsync();
             return Ok();
@@ -94,8 +95,21 @@ namespace EmployeeManagementSystem.Controllers
         [Authorize(Roles = "Admin")]
         public async Task<IActionResult> DeleteEmployee([FromRoute] int id)
         {
+            var emp = await erepo.FindByIdAsync(id);
+            if (emp == null)
+            {
+                return NotFound();
+            }
             await erepo.DeleteAsync(id);
+
+            if (emp.UserId.HasValue)
+            {
+                await urepo.DeleteAsync(emp.UserId.Value);
+            }
+
             await erepo.SaveChangesAsync();
+            await urepo.SaveChangesAsync();
+
             return Ok();
         }
     }

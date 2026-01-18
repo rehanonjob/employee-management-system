@@ -6,7 +6,7 @@ namespace EmployeeManagementSystem.Entity
     {
         public int Id { get; set; }
 
-        [ForeignKey(nameof(Employee))]   
+        [ForeignKey(nameof(Employee))]
         public int EmpId { get; set; }
 
         public Employee Employee { get; set; }
@@ -14,7 +14,6 @@ namespace EmployeeManagementSystem.Entity
         public DateTime Date { get; set; }
         public DateTime ScanInTime { get; set; }
         public DateTime? ScanOffTime { get; set; }
-        public decimal? WorkingHours { get; set; }
         public string Status { get; set; }
         public DateTime CreatedAt { get; set; } = DateTime.Now;
     }

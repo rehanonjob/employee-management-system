@@ -49,9 +49,6 @@ namespace EmployeeManagementSystem.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<decimal?>("WorkingHours")
-                        .HasColumnType("decimal(18,2)");
-
                     b.HasKey("Id");
 
                     b.HasIndex("EmpId");
@@ -83,6 +80,9 @@ namespace EmployeeManagementSystem.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<decimal?>("BasicSalary")
+                        .HasColumnType("decimal(18,2)");
 
                     b.Property<DateTime>("DateOfBirth")
                         .HasColumnType("datetime2");
@@ -158,6 +158,52 @@ namespace EmployeeManagementSystem.Migrations
                     b.ToTable("LeaveRequests");
                 });
 
+            modelBuilder.Entity("EmployeeManagementSystem.Entity.PaySlip", b =>
+                {
+                    b.Property<int>("PayslipId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("PayslipId"));
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("EmployeeId")
+                        .HasColumnType("int");
+
+                    b.Property<decimal>("NetPayable")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<int>("PaidDays")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("PayPeriodEnd")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("PayPeriodStart")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Status")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<decimal>("TotalDeductions")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal>("TotalEarnings")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<int>("TotalWorkingDays")
+                        .HasColumnType("int");
+
+                    b.HasKey("PayslipId");
+
+                    b.HasIndex("EmployeeId");
+
+                    b.ToTable("PaySlips");
+                });
+
             modelBuilder.Entity("EmployeeManagementSystem.Entity.User", b =>
                 {
                     b.Property<int>("Id")
@@ -207,6 +253,17 @@ namespace EmployeeManagementSystem.Migrations
                     b.Navigation("Department");
 
                     b.Navigation("User");
+                });
+
+            modelBuilder.Entity("EmployeeManagementSystem.Entity.PaySlip", b =>
+                {
+                    b.HasOne("EmployeeManagementSystem.Entity.Employee", "Employee")
+                        .WithMany()
+                        .HasForeignKey("EmployeeId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Employee");
                 });
 #pragma warning restore 612, 618
         }

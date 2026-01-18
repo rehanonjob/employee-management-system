@@ -42,7 +42,7 @@ namespace EmployeeManagementSystem.Data
 
         public async Task<List<T>> GetAll(Expression<Func<T , bool>> filter)
         {
-            var list = await dbs.AsQueryable().Where(filter).ToListAsync();
+            var list = await dbs.AsQueryable().Where(filter).ToListAsync();  
             return list;
         }
 
