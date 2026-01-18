@@ -15,6 +15,7 @@ import { IAuthToken } from '../../types/auth';
 import { ToastrService } from 'ngx-toastr';
 import { Route, Router } from '@angular/router';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { NgIf } from '@angular/common';
 
 @Component({
   selector: 'app-login',
@@ -30,7 +31,8 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
     MatCardTitle,
     MatCardContent,
     MatAnchor,
-    MatProgressSpinnerModule
+    MatProgressSpinnerModule,
+    NgIf
   ],
   templateUrl: './login.html',
   styleUrl: './login.css',

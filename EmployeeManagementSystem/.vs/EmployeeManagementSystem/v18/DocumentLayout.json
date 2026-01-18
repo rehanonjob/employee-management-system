@@ -114,8 +114,7 @@
               "RelativeToolTip": "Models\\PaySlipDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwBUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-11T18:14:31.523Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-11T18:14:31.523Z"
             },
             {
               "$type": "Document",
@@ -139,8 +138,7 @@
               "RelativeToolTip": "Entity\\Employee.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAADwvxMAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-11T12:09:14.788Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-11T12:09:14.788Z"
             },
             {
               "$type": "Document",
@@ -152,8 +150,7 @@
               "RelativeToolTip": "Controllers\\EmployeeController.cs",
               "ViewState": "AgIAAGAAAAAAAAAAAAAUwGcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-11T11:43:38.77Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-11T11:43:38.77Z"
             },
             {
               "$type": "Document",
@@ -163,7 +160,7 @@
               "RelativeDocumentMoniker": "Controllers\\AttendenceController.cs",
               "ToolTip": "D:\\Seed\\Employee Management System\\EmployeeManagementSystem\\Controllers\\AttendenceController.cs",
               "RelativeToolTip": "Controllers\\AttendenceController.cs",
-              "ViewState": "AgIAAIcAAAAAAAAAAAA+wJEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAIgAAAAAAAAAAAAqwKAAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-11T10:25:57.838Z",
               "EditorCaption": ""
