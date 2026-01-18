@@ -1,0 +1,26 @@
+.main-content{
+    width: 90vw;
+}
+
+.payslipformonth span{
+    height: 2px;
+    width: 30vw;
+    background-color: black;
+}
+
+.emp-details-table  td{
+    padding: 0 20px;
+}
+
+.Earings-table th,td{
+ padding: 8px 24px;
+}
+
+.Earings-table p {
+  margin: 0;
+}
+
+
+.Earings-table th{
+    padding: 10px 24px;
+}

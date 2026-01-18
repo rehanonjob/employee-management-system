@@ -1,0 +1,50 @@
+<header class="hader">
+  
+
+  <mat-toolbar>
+    <button mat-icon-button (click)="drawer.toggle()" aria-label="Menu">
+      <mat-icon>menu</mat-icon>
+    </button>
+
+    <span class="toolbar-title">Employee Management System</span>
+
+    <!-- THIS pushes everything to the right -->
+    <span class="flex-grow-1"></span>
+    @if(this.authservice.isLoggedIn){
+    <div class="text-dark text-decoration-none cursor-pointer" (click)="editProfile()">
+      {{ authservice.isName }}
+    </div>
+    <div>
+      <button mat-icon-button (click)="logout()">
+        <mat-icon>logout</mat-icon>
+      </button>
+    </div>
+    }
+  </mat-toolbar>
+</header>
+<mat-drawer-container class="drawer-custom ">
+  @if(this.authservice.isLoggedIn){
+  <mat-drawer #drawer [mode]="'side'" [opened]="false">
+    <div class="sidebar-links">
+      @if(this.authservice.isEmployee){
+      <a href="/employee-dashboard">Employee DashBoard</a>
+      } @else{
+      <a href="/">DashBoard</a>
+      }
+      <a href="/departments">Departments</a>
+      <a href="/employees">Employees</a>
+      <a href="/attendence-list">Attendance</a>
+      <button mat-button (click)="logout()" class="sidebar-link-btn">
+        Logout <mat-icon>logout</mat-icon>
+      </button>
+    </div>
+  </mat-drawer>
+  }
+  <mat-drawer-content>
+    <main>
+      <router-outlet></router-outlet>
+    </main>
+  </mat-drawer-content>
+</mat-drawer-container>
+
+<footer></footer>

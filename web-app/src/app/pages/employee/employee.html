@@ -1,0 +1,19 @@
+@if(authSer.isAdmin){
+<div class="p-5">
+  <div class="d-flex justify-content-between align-items-center">
+    <h1 class="fw-semibold! fs-2">Employee List</h1>
+    <mat-form-field class="search-field">
+      <input matInput type="text" placeholder="Search employee" [formControl]="serachControl"/>
+    </mat-form-field>
+    <button matButton="filled" style="background-color: green" (click)="add()">Add</button>
+  </div>
+  <mat-card>
+    <app-table
+      [data]="empList"
+      [displayedColumns]="showCols"
+      (onEdit)="edit($event)"
+      (onDelete)="deleteEMP($event)"
+    ></app-table>
+  </mat-card>
+</div>
+}

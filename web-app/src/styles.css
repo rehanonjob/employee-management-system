@@ -1,0 +1,13 @@
+@import 'ngx-toastr/toastr';
+
+body {
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  background-color: lab(100% 0.01 -0.01);
+}
+
+.toast-container {
+  z-index: 99999 !important;
+}

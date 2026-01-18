@@ -1,0 +1,86 @@
+<div class="p-3 pb-4">
+  @if (isListOpen) {
+
+  <div class="d-flex justify-content-between align-items-center mb-3">
+    <h1 class="fs-2 fw-semibold mb-0">Departments</h1>
+    @if (auth.isAdmin) {
+    <button
+      matButton="filled"
+      class="btn btn-success px-4"
+      (click)="isListOpen = false"
+    >
+      Add
+    </button>
+    }
+  </div>
+
+  <div class="card shadow-sm">
+    <div class="table-responsive">
+      <table class="table table-hover align-middle mb-0 text-center">
+        <thead class="table-light">
+          <tr>
+            <th style="width: 100px">Id</th>
+            <th>Name</th>
+            <th style="width: 200px">Action</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr *ngFor="let d of departlist">
+            <td class="fw-semibold">{{ d.id }}</td>
+            <td>{{ d.name }}</td>
+            @if (auth.isAdmin) {
+            <td>
+              <i
+                class="fa-solid fa-eye text-primary fs-5 me-3 cursor-pointer action-icon"
+                title="Edit"
+                (click)="editDepartment(d)"
+              >
+              </i>
+
+              <i
+                class="fa-solid fa-trash-can text-danger fs-5 cursor-pointer action-icon"
+                title="Delete"
+                (click)="deleteDepartment(d)"
+              >
+              </i>
+            </td>
+            }
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  } @else {
+
+  <div class="d-flex justify-content-between align-items-center mb-3">
+    <h1 class="fs-2 fw-semibold mb-0">
+      {{ isUpdatebtn ? 'Update Department' : 'Add Department' }}
+    </h1>
+    <button matButton="filled" class="btn btn-secondary px-4" (click)="isListOpen = true">
+      Back
+    </button>
+  </div>
+
+  <div class="card shadow-sm p-4" style="width: 32vw">
+    <form (ngSubmit)="isUpdatebtn ? updateDepartment() : addingDepartment()">
+      <div class="mb-3">
+        <label for="deptName" class="form-label">Department Name</label>
+        <input
+          type="text"
+          class="form-control"
+          id="deptName"
+          [(ngModel)]="deptataName"
+          name="deptName"
+          required
+        />
+      </div>
+      <button type="submit" class="btn btn-success px-4" [disabled]="!deptataName.trim()">
+        {{ isUpdatebtn ? 'Update' : 'Add' }}
+      </button>
+    </form>
+  </div>
+
+  }
+</div>

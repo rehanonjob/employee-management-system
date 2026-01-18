@@ -1,0 +1,16 @@
+.search-field {
+  width: 350px;
+  height: 70px;
+}
+
+.search-field .mat-form-field-wrapper {
+  padding-bottom: 0;
+}
+
+.search-field .mat-input-element {
+  font-size: 14px;
+}
+
+.search-field .mat-form-field-outline {
+  color: #ced4da;
+}

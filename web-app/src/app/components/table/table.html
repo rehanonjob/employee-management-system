@@ -1,0 +1,51 @@
+<table mat-table [dataSource]="data" class="mat-elevation-z2 table table-hover align-middle w-100">
+  @for (item of displayedColumns; track $index) { @if (item !== 'Action') {
+  <!-- Normal data columns -->
+  <ng-container [matColumnDef]="item">
+    <th mat-header-cell *matHeaderCellDef class="fw-semibold text-muted text-uppercase small">
+      {{ item }}
+    </th>
+
+    <td mat-cell *matCellDef="let element" class="py-3">
+      {{ element[item] }}
+    </td>
+  </ng-container>
+  } @else {
+  <!-- Action column -->
+  <ng-container matColumnDef="Action">
+    <th
+      mat-header-cell
+      *matHeaderCellDef
+      class="fw-semibold text-muted text-uppercase small text-center"
+    >
+      Action
+    </th>
+
+    <td mat-cell *matCellDef="let element" class="text-center">
+      <i
+        class="fa-solid fa-eye text-primary fs-6 me-3 cursor-pointer action-icon "
+        title="View"
+        (click)="editEmployee(element)"
+      >
+      </i>
+
+      <i
+        class="fa-solid fa-trash-can text-danger fs-6 cursor-pointer action-icon"
+        title="Delete"
+        (click)="deleteEmployee(element)"
+      >
+      </i>
+      <i
+        class="fa-solid fa-file-invoice text-success fs-6 cursor-pointer action-icon"
+        title="Generate Pay Slip"
+        (click)="generatePaySlip(element.id)"
+      >
+      </i>
+    </td>
+  </ng-container>
+  } }
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns" class="table-light"></tr>
+
+  <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+</table>

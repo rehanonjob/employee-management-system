@@ -1,0 +1,36 @@
+<div class="d-flex justify-content-center align-items-start vh-100">
+  <mat-card class="p-4 shadow login-card mt-5">
+    <div class="text-center mb-3">
+      <h3 class="fw-semibold m-0">Login</h3>
+    </div>
+
+    <mat-card-content>
+      <form [formGroup]="loginForm" (ngSubmit)="onLogin()" class="d-flex flex-column">
+        <div class="mb-3">
+          <mat-form-field class="w-100" appearance="outline">
+            <mat-label>Username</mat-label>
+            <input matInput formControlName="email" required />
+          </mat-form-field>
+        </div>
+
+        <div class="mb-3">
+          <mat-form-field class="w-100" appearance="outline">
+            <mat-label>Password</mat-label>
+            <input matInput type="password" formControlName="password" required />
+          </mat-form-field>
+        </div>
+
+        <button
+          mat-raised-button
+          class="btn btn-primary fw-semibold py-1 mt-2"
+          style="font-size: 0.9rem"
+          type="submit"
+          [disabled]="isLoading"
+        >
+          <mat-spinner *ngIf="isLoading" diameter="20" class="me-2"></mat-spinner>
+          {{ isLoading ? 'Logging in...' : 'Login' }}
+        </button>
+      </form>
+    </mat-card-content>
+  </mat-card>
+</div>

@@ -1,0 +1,94 @@
+<div class="d-flex justify-content-center align-items-center">
+  <div class="d-flex gap-4 m-3">
+    <div class="card shadow-lg p-4 text-center" style="width: 320px">
+      <h4 class="card-title mb-4">Departments</h4>
+      <button class="btn btn-primary px-4" (click)="redirectdepartment()">View All</button>
+    </div>
+
+    <div class="card shadow-lg p-4 text-center" style="width: 320px">
+      <h4 class="card-title mb-4">Employees</h4>
+      <button class="btn btn-success px-4" (click)="redirectemp()">View All</button>
+    </div>
+
+    <div class="card shadow-lg p-4 text-center" style="width: 320px">
+      <h4 class="card-title mb-4">Attendance</h4>
+      <button class="btn btn-warning px-4" (click)="redirectaten()">View All</button>
+    </div>
+  </div>
+</div>
+<div class="container mt-4">
+
+  <div class="card shadow-sm">
+    <div class="card-header bg-white fw-semibold">
+      Leave Requests
+    </div>
+
+    <div class="card-body p-0">
+      <div class="table-responsive">
+        <table class="table table-hover align-middle mb-0">
+          <thead class="table-light">
+            <tr>
+              <th>#</th>
+              <th>Employee</th>
+              <th>Leave Type</th>
+              <th>From</th>
+              <th>To</th>
+              <th>Reason</th>
+              <th>Status</th>
+              <th class="text-center">Action</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr *ngFor="let i of adminleavelist">
+              <td class="fw-semibold">{{ i.leaveId }}</td>
+              <td>{{ i.empName }}</td>
+              <td>{{ i.leaveType }}</td>
+              <td>{{ i.startDate | date:'dd MMM yyyy' }}</td>
+              <td>{{ i.endDate | date:'dd MMM yyyy' }}</td>
+              <td class="text-muted">{{ i.reason }}</td>
+
+              <!-- Status Badge -->
+              <td>
+                <span
+                  
+                >
+                  {{ i.status }}
+                </span>
+              </td>
+
+              <!-- Actions -->
+              <td class="text-center">
+                <button
+                  *ngIf="i.status === 'Pending'"
+                  class="btn btn-sm btn-outline-success me-2"
+                  (click)="updateStatus(i.leaveId, 'Approved')"
+                >
+                  Approve
+                </button>
+
+                <button
+                  *ngIf="i.status === 'Pending'"
+                  class="btn btn-sm btn-outline-danger"
+                  (click)="updateStatus(i.leaveId, 'Rejected')"
+                >
+                  Reject
+                </button>
+              </td>
+            </tr>
+
+          
+            <tr *ngIf="adminleavelist?.length === 0">
+              <td colspan="8" class="text-center text-muted py-4">
+                No leave requests found
+              </td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+
+</div>

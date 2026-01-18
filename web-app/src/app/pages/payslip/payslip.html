@@ -1,0 +1,184 @@
+<div *ngIf="errorMessage" class="alert alert-warning text-center">
+  {{ errorMessage }}
+  <p>Payslip can only be generated on the last day of the current month</p>
+</div>
+<div *ngIf="paydata" class="p-3 d-flex justify-content-center">
+  <div class="main-content bg-light shadow-lg">
+    <div class="payslipformonth d-flex justify-content-center align-items-center pt-3 gap-2">
+      <span></span>
+      <h5>
+        Payslip for {{ paydata.startDate | date: 'MMMM yyyy' }}
+      </h5>
+      <span></span>
+    </div>
+    <div class="EmpInfo">
+      <table class="emp-details-table">
+        <tr>
+          <td><p>Name</p></td>
+          <td><p>:</p></td>
+          <td>
+            <p>{{ paydata.employeeName }} ({{ paydata.employeeId }})</p>
+          </td>
+        </tr>
+        <tr>
+          <td><p>Dept / Id</p></td>
+          <td><p>:</p></td>
+          <td>
+            <p>{{ paydata.deptName }} ({{ paydata.deptId }})</p>
+          </td>
+        </tr>
+        <tr>
+          <td><p>Designation</p></td>
+          <td><p>:</p></td>
+          <td>
+            <p>{{ paydata.designation | titlecase }}</p>
+          </td>
+        </tr>
+        <tr>
+          <td><p>Birth Date</p></td>
+          <td><p>:</p></td>
+          <td>
+            <p>{{ paydata.dateOfBirth | date: 'dd MMM yyyy' }}</p>
+          </td>
+        </tr>
+        <tr>
+          <td><p>Joining Date</p></td>
+          <td><p>:</p></td>
+          <td>
+            <p>{{ paydata.joiningDate | date: 'dd MMM yyyy' }}</p>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="Earning&Deduction m-4">
+      <h5>Earings</h5>
+      <table class="Earings-table">
+        <thead>
+          <th>Heading</th>
+          <th></th>
+          <th>Amount</th>
+          <th>Earned</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td><p>BASIC</p></td>
+            <td><p>:</p></td>
+            <td>
+              <p>{{ paydata.basicSalary | number: '1.2-2' }}</p>
+            </td>
+            <td>
+              <p>{{ paydata.totalEarned | number: '1.2-2' }}</p>
+            </td>
+          </tr>
+          <tr>
+            <td><p>HRA</p></td>
+            <td><p>:</p></td>
+            <td>
+              <p>{{ paydata.hra | number: '1.2-2' }}</p>
+            </td>
+            <td>
+              <p>{{ paydata.hra | number: '1.2-2' }}</p>
+            </td>
+          </tr>
+          <tr>
+            <td><p>Conveyance</p></td>
+            <td><p>:</p></td>
+            <td>
+              <p>{{ paydata.conveyance | number: '1.2-2' }}</p>
+            </td>
+            <td>
+              <p>{{ paydata.conveyance | number: '1.2-2' }}</p>
+            </td>
+          </tr>
+          <tr>
+            <td><p>EA</p></td>
+            <td><p>:</p></td>
+            <td>
+              <p>{{ paydata.educational | number: '1.2-2' }}</p>
+            </td>
+            <td>
+              <p>{{ paydata.educational | number: '1.2-2' }}</p>
+            </td>
+          </tr>
+          <tr>
+            <td><p>DA</p></td>
+            <td><p>:</p></td>
+            <td>
+              <p>{{ paydata.driverAllowance | number: '1.2-2' }}</p>
+            </td>
+            <td>
+              <p>{{ paydata.driverAllowance | number: '1.2-2' }}</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p><b>Total</b></p>
+            </td>
+            <td><p>:</p></td>
+            <td>
+              <p>{{ paydata.basicTotalAmount | number: '1.2-2' }}</p>
+            </td>
+            <td>
+              <p>{{ paydata.totalEarnedAmount | number: '1.2-2' }}</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h5 class="mt-4">Deductions</h5>
+      <table class="Earings-table">
+        <thead>
+          <th>Heading</th>
+          <th></th>
+          <th>Amount</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>P.TAX</td>
+            <td>:</td>
+            <td>{{ paydata.ptax | number: '1.2-2' }}</td>
+          </tr>
+          <tr>
+            <td>P.F</td>
+            <td>:</td>
+            <td>{{ paydata.pft | number: '1.2-2' }}</td>
+          </tr>
+          <tr>
+            <td><b>Total</b></td>
+            <td>:</td>
+            <td>{{ paydata.totalDeductions | number: '1.2-2' }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="TotalPayable m-4">
+      <h5>Payable</h5>
+      <table>
+        <tr>
+          <td>Attendence</td>
+          <td>:</td>
+          <td>{{ paydata.paidDays }}</td>
+        </tr>
+        <tr>
+          <td>Total Earning</td>
+          <td>:</td>
+          <td>{{ paydata.totalEarnedAmount | number: '1.2-2' }}</td>
+        </tr>
+        <tr>
+          <td>Total Deduction</td>
+          <td>:</td>
+          <td>{{ paydata.totalDeductions | number: '1.2-2' }}</td>
+        </tr>
+        <tr>
+          <td><b>Net Payable</b></td>
+          <td>:</td>
+          <td>
+            <b>{{ paydata.netPayable | number: '1.2-2' }}</b>
+          </td>
+        </tr>
+      </table>
+      <div class="text-start"><button type="button" class="btn btn-primary m-2" (click)="AddPaySlip()">Save</button></div>
+    </div>
+  </div>
+</div>

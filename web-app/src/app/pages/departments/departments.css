@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.custable th,
+td {
+  background-color: rgb(242, 233, 233);
+}
+.form-box {
+  width: 350px;
+}
+
+.form-box h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.form-box input {
+  height: 40px;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.btn-success {
+  border-radius: 8px !important;
+}
