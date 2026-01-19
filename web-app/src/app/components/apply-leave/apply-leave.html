@@ -1,5 +1,4 @@
 <form [formGroup]="leaveForm" (ngSubmit)="onSubmit()" class="p-5">
-  <!-- Leave Type -->
   <mat-form-field appearance="outline" class="w-100">
     <mat-label>Leave Type</mat-label>
     <mat-select formControlName="leaveType">
@@ -9,7 +8,6 @@
     </mat-select>
   </mat-form-field>
 
-  <!-- Start Date -->
   <mat-form-field appearance="outline" class="w-100">
     <mat-label>Start Date</mat-label>
     <input matInput [matDatepicker]="startPicker" formControlName="startDate" readonly />
@@ -17,7 +15,6 @@
     <mat-datepicker #startPicker></mat-datepicker>
   </mat-form-field>
 
-  <!-- End Date -->
   <mat-form-field appearance="outline" class="w-100">
     <mat-label>End Date</mat-label>
     <input
@@ -31,12 +28,12 @@
     <mat-datepicker #endPicker></mat-datepicker>
   </mat-form-field>
 
-  <!-- Reason -->
   <mat-form-field appearance="outline" class="w-100">
     <mat-label>Reason</mat-label>
     <textarea matInput rows="3" formControlName="reason"></textarea>
   </mat-form-field>
 
-  <button mat-raised-button color="primary" type="submit" (click)="refreshList()">Apply Leave</button>
+  <button mat-raised-button color="primary" type="submit" (click)="refreshList()">
+    Apply Leave
+  </button>
 </form>
-

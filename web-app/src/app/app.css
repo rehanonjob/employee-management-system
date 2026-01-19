@@ -1,22 +1,9 @@
-
-mat-toolbar {
-  /* background-color: #1A55E3!important; */
-}
-.toolbar-title{
-  /* color: #FF0854; */
-}
-
-.dawer-custom{
-  background-color: #1D1F3C!important;
-}
-
-#drawer {
-  /* background-color: blueviolet!; */
+.dawer-custom {
+  background-color: #1d1f3c !important;
 }
 
 mat-drawer-container mat-drawer {
-  background-color: #1D1F3C!important;
-  /* background-color: blueviolet; */
+  background-color: #1d1f3c !important;
   width: 260px !important;
 }
 
@@ -26,11 +13,9 @@ mat-drawer-content main {
 }
 
 .sidebar-links {
-  
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: center; */
   padding: 15px;
 }
 
@@ -38,18 +23,18 @@ mat-drawer-content main {
   text-decoration: none !important;
   padding: 12px;
   font-size: 18px;
-  color: #EEF0ED
+  color: #eef0ed;
 }
 
 .sidebar-links a:hover {
-  color: #E94736;
+  color: #e94736;
 }
 
 .sidebar-link-btn {
   text-decoration: none !important;
   padding: 12px;
   font-size: 18px;
-  color: #EEF0ED;
+  color: #eef0ed;
   background: none;
   border: none;
   cursor: pointer;
@@ -59,12 +44,13 @@ mat-drawer-content main {
 }
 
 .sidebar-link-btn:hover {
-  color: #E94736;
+  color: #e94736;
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
 
-.cursor-pointer { cursor: pointer; }
-
-main{
-  background-color: #eaebed!important;
+main {
+  background-color: #eaebed !important;
 }

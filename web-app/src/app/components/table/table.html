@@ -1,6 +1,5 @@
 <table mat-table [dataSource]="data" class="mat-elevation-z2 table table-hover align-middle w-100">
   @for (item of displayedColumns; track $index) { @if (item !== 'Action') {
-  <!-- Normal data columns -->
   <ng-container [matColumnDef]="item">
     <th mat-header-cell *matHeaderCellDef class="fw-semibold text-muted text-uppercase small">
       {{ item }}
@@ -11,7 +10,7 @@
     </td>
   </ng-container>
   } @else {
-  <!-- Action column -->
+  
   <ng-container matColumnDef="Action">
     <th
       mat-header-cell

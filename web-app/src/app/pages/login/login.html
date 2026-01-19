@@ -28,7 +28,7 @@
           [disabled]="isLoading"
         >
           <mat-spinner *ngIf="isLoading" diameter="20" class="me-2"></mat-spinner>
-          {{ isLoading ? 'Logging in...' : 'Login' }}
+          {{ isLoading ? '' : 'Login' }}
         </button>
       </form>
     </mat-card-content>

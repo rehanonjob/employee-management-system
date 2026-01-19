@@ -123,6 +123,7 @@ namespace EmployeeManagementSystem.Controllers
             var result = from l in Leaves
                          join e in Employees
                          on l.EmpId equals e.Id
+                         orderby l.Id descending
                          select new AdminLeaveDTO
                          {
                              LeaveId = l.Id.Value,

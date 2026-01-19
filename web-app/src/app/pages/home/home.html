@@ -47,8 +47,6 @@
               <td>{{ i.startDate | date:'dd MMM yyyy' }}</td>
               <td>{{ i.endDate | date:'dd MMM yyyy' }}</td>
               <td class="text-muted">{{ i.reason }}</td>
-
-              <!-- Status Badge -->
               <td>
                 <span
                   
@@ -56,8 +54,6 @@
                   {{ i.status }}
                 </span>
               </td>
-
-              <!-- Actions -->
               <td class="text-center">
                 <button
                   *ngIf="i.status === 'Pending'"

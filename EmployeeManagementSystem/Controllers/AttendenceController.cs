@@ -35,7 +35,7 @@ namespace EmployeeManagementSystem.Controllers
             var email = User.FindFirstValue(ClaimTypes.Name);
             var emp = (await erepo.GetAll(x => x.Email == email)).FirstOrDefault();
 
-            var today = DateTime.UtcNow.Date;
+            var today = DateTime.Now.Date;
 
             var alreadyScanned = (await arepo.GetAll(x => x.EmpId == emp.Id && x.Date == today)).Any();
 
@@ -48,7 +48,7 @@ namespace EmployeeManagementSystem.Controllers
             {
                 EmpId = emp.Id,
                 Date = today,
-                ScanInTime = DateTime.UtcNow,
+                ScanInTime = DateTime.Now,
                 Status = "Present"
             };
 
@@ -65,7 +65,7 @@ namespace EmployeeManagementSystem.Controllers
             var email = User.FindFirstValue(ClaimTypes.Name);
             var emp = (await erepo.GetAll(x => x.Email == email)).FirstOrDefault();
 
-            var today = DateTime.UtcNow.Date;
+            var today = DateTime.Now.Date;
 
             var attendence = (await arepo.GetAll(x => x.EmpId == emp.Id && x.Date == today)).FirstOrDefault();
 
@@ -74,7 +74,7 @@ namespace EmployeeManagementSystem.Controllers
                 return BadRequest(new { message = "Scan-in not found" });
             }
 
-            attendence.ScanOffTime = DateTime.UtcNow;
+            attendence.ScanOffTime = DateTime.Now;
 
             await arepo.SaveChangesAsync();
             return Ok(new { message = "Scan-off successful" });
@@ -92,6 +92,7 @@ namespace EmployeeManagementSystem.Controllers
                 from a in attendances
                 join e in employees
                 on a.EmpId equals e.Id
+                orderby a.CreatedAt descending
                 select new AdminAttendanceDTO
                 {
                     EmpId = e.Id,
@@ -119,7 +120,7 @@ namespace EmployeeManagementSystem.Controllers
                 return Unauthorized();
             }
 
-            var today = DateTime.UtcNow.Date;
+            var today = DateTime.Now.Date;
 
             var attendence = (await arepo.GetAll(x => x.EmpId == emp.Id && x.Date == today)).FirstOrDefault();
 
@@ -144,13 +145,14 @@ namespace EmployeeManagementSystem.Controllers
             DateTime today = DateTime.Today;
             int lastDay = DateTime.DaysInMonth(today.Year, today.Month);
 
-            //if (today.Day != lastDay)
-            //{
-            //    return BadRequest("Payslip can only be generated on the last day of the current month");
-            //}
+            //comment below condition to generate payslip in middle of month
+            if (today.Day != lastDay)
+            {
+                return BadRequest("Payslip can only be generated on the last day of the current month");
+            }
 
-            int month = DateTime.UtcNow.Month;
-            int year = DateTime.UtcNow.Year;
+            int month = DateTime.Now.Month;
+            int year = DateTime.Now.Year;
 
             DateTime startDate = new DateTime(year, month, 1);
             DateTime endDate = startDate.AddMonths(1);
@@ -255,7 +257,7 @@ namespace EmployeeManagementSystem.Controllers
                 TotalEarnings = psy.TotalEarnings,
                 TotalDeductions = psy.TotalDeductions,
                 NetPayable = psy.NetPayable,
-                CreatedDate = DateTime.UtcNow,
+                CreatedDate = DateTime.Now,
                 Status = "Generated"
             };
 
